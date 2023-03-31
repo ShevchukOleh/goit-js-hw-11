@@ -1,0 +1,116 @@
+:root{--timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+body{
+  background-color: rgb(218, 176, 141); 
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 200;
+}
+
+p,
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+img{
+    display: block;
+    width: 290px;
+    height: 200px;
+}
+
+.search-form{
+    display: flex;
+    justify-content: center;
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 10px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    align-items: center;
+}
+
+.search-form input{
+    height: 30px;
+    width: 350px;
+    border-radius: 5px;
+    border: 2px solid rgb(135, 92, 39);
+    font-size: 16px;
+    line-height: 1.875;
+    outline: none;
+    cursor: pointer;
+    padding-left: 5px;
+    padding-right: 5px;
+    transition: border-color 250ms var(--timing-function);
+}
+
+.search-form input:focus{
+    border-color: azure;
+}
+
+button{
+    width: 80px;
+    height: 35px;
+    margin-left: 10px;
+    border-radius: 5px;
+    border: 2px solid rgb(135, 92, 39);
+    background-color: rgb(135, 92, 39);
+    color: azure;
+    font-size: 16px;
+    line-height: 1.875;
+    transition: background-color 250ms var(--timing-function);
+}
+
+button:hover{
+    cursor: pointer;
+    background-color: azure;
+    color: rgb(135, 92, 39);
+}
+
+.gallery{
+    display: flex;
+    max-width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+    gap: 13px;
+    flex-wrap: wrap;
+}
+
+.gallery__Link {
+    position: relative;
+    box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.2),
+        0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 2px 1px -1px rgba(0, 0, 0, 0.12);
+}
+
+.photo-card{
+    width: 290px;
+}
+
+.info{
+    display: flex;
+    gap: 10px;
+    padding: 10px;
+    font-size: 14px;
+    border-left: 2px solid #d9d7d7; 
+    border-right: 2px solid #d9d7d7;
+    border-bottom: 2px solid #d9d7d7;
+    justify-content: center;
+    background-color: #eeeeee;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.5);
+
+}
+
+.info-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    color: #100f31;
+}
+
+.info-item b{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+}
